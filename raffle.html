@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Raffle</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="./icon.png">
+    </head>
+<body>
+    <nav>
+        <ul class="modul">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./information.html">More info</a></li>
+            <li><a href="./benefitsTips.html">Benefits</a></li>
+            <li><a href="./raffle.html">Raffle</a></li>
+        </ul>
+        <img class="logo" src="./logo.png">
+    </nav>
+    <header>
+        <h1>Raffle</h1>
+        <h2>You can collaborate and participate in a raffle for a 1-week trip</h2>
+    </header>
+    <main class="main-raffle">
+        <section class="center-raffle">
+            <article class="article-map">
+                <h3>To participate you must be from Toronto, Canada</h3>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.30943582457!2d-79.37805805!3d43.7182412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20Ontario%2C%20Canad%C3%A1!5e0!3m2!1ses-419!2sco!4v1687500405653!5m2!1ses-419!2sco" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+            <aside class="aside-form">
+                <form class="form" action="show_data.html" method="get">
+                        <fieldset class="datos-p">
+                            <label for="first-name"></label>
+                            <input type="text" id="first-name" name="user-name" placeholder="first name">
+
+                            <label for="last-name"></label>
+                            <input type="text" id="last-name" name="user-name" placeholder="last name">
+                
+                            <label for="email"></label>
+                            <input type="email" name="email-user" id="email" placeholder="e-mail">
+
+                            <label for="country"></label>
+                            <select name="country" id="country">
+                                <option value="">--country--</option>
+                                <option value="canada">Canada</option>
+                                <option value="united states">United States</option>
+                                <option value="argentina">Argentina</option>
+                                <option value="chile">Chile</option>
+                                <option value="colombia">Colombia</option>
+                            </select>
+
+                            <label for="date"></label>
+                            <input type="date" name="date" id="dates">
+                
+                            <div class="cash-label">
+                                <input type="radio" name="pay" id="c-cash" value="Cash">
+                                <label for="c-cash">Cash</label>
+                            </div>
+                            <div class="credit-label">
+                                <input type="radio" name="pay" id="c-credit" value="Credit">
+                                <label for="c-credit">Credit</label>
+                            </div>
+                            <div class="debit-label">
+                                <input type="radio" name="pay" id="c-debit" value="Debit">
+                                <label for="c-debit">Debit</label>
+                            </div>
+
+                            <label for="message"></label>
+                            <input type="text" name="message" id="message" placeholder="message">
+                            
+                            <div class="accept-label">
+                                <input type="checkbox" name="terms" id="accept" value="accept">
+                                <label for="accept" style="font-size: 10px;">Accept terms and conditions...</label>
+                            </div>
+                
+                            <input class="enviar" type="submit" value="Enviar">
+                        </fieldset>
+                </form>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <img class="logo" src="./logo.png">
+        <p>By Agmeth Guerra</p>
+    </footer>
+</body>
+</html>
